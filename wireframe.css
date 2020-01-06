@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    margin: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.tab {
+    text-indent: 30px;
+}
+
+/*header CSS*/
+.startHeader, .navHeader {
+    display: inline-flex;
+    border-bottom: 3px solid black;
+    justify-content: space-around;
+    width: 90%;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.startHeader a, .navHeader a {
+    font-size: 14px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.navHeader {
+    margin: 0;
+    padding: 10px;
+    height: 50px;
+    left: 0;
+    top: 0;
+}
+
+/*main body css*/
+main {
+    text-align: center;
+}
+
+
+/*start page CSS*/
+h1 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.intro {
+    margin: 20px;
+    padding: 15px;
+}
+
+.buttons {
+    margin: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.startButton {
+    width: 50%;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/*portfolio CSS*/
+.techList {
+    margin: 15px;
+}
+
+.portfolioSS {
+    border: 1px solid black;
+    margin: 15px;
+    padding: 15px;
+}
+
+.pImage {
+    height: 50%;
+    margin: 10px auto;
+}
+
+.portfolioDescription {
+    font-size: 15px;
+    margin: 10px 5px 20px 5px;
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+}
+
+.linkButtons {
+    margin: 30px;
+}
+
+.navigateButtons {
+    margin: 15px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.nButton {
+    height: 50px;
+    width: 30%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.pageNo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+}
+
+.pageNo span {
+    margin: 5px;
+}
+
+
+/*about me page CSS*/
+.aboutMe {
+    margin: 5px;
+    padding: 10px;
+}
+
+.bio{
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.socialMediaLinks {
+    margin: 30px auto 20px;
+    border: 1px solid black;
+    width: 60%;
+}
+
+.email {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/*footer CSS*/
+footer{
+    text-align: center;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+footer a{
+    color: blue;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        margin: 10px auto 0;
+    }
+    
+    .startHeader{
+        font-size: 20px;
+        border: none;
+        margin: 30px 50px 50px;
+    }
+
+    .startHeader a {
+        display: none;
+    }
+
+    h1 {
+        text-align: center;
+
+    }
+
+    .buttons {
+        margin: 130px 15px 0;
+        padding: 25px;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    .intro {
+        margin: 20px;
+        padding: 15px;
+        font-size: 18px;
+    }
+ 
+    .startButton {
+        margin: 30px auto 0;
+        width: 30%;
+        height: 75px;
+    }
+
+    .startImage {
+        height: 50%;
+        position: absolute;
+        top: 325px;
+    }
+
+    /*navbar Query*/
+    .navHeader{
+        background: lightgray;
+        width: 100%;
+        position: fixed;
+        border-bottom: none;
+        margin: 0;
+        justify-content: flex-end;
+    }
+
+    .navImage {
+        position: absolute; 
+        left: 10px;
+        top: 15px;
+    }
+
+    .navHeader a {
+        padding: 10px;
+
+    }
+
+    /*portfolio query*/
+    .portfolioSS {
+        margin: 20px 20px;
+        position: relative;
+        top: 50px;
+    }
+
+    .navigateButtons {
+        position: relative;
+        top: 50px;
+    }
+
+    .nButton{
+        width: 200px;
+    }
+
+
+    /*about me media query*/
+
+    .bio {
+         margin: 50px 20px 10px;
+         border: none;
+    }
+
+    .socialMediaLinks {
+        border: none;
+
+    }
+
+    .contact {
+        border: 1px solid black;
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    footer {
+        position: relative;
+        top: 50px;
+    }
+}
