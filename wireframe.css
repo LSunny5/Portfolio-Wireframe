@@ -190,6 +190,14 @@ footer a{
     font-size: 10px;
 }
 
+.portfolio2{
+    display: none;
+}
+
+.portfolio3 {
+    display: none;
+}
+
 /*Tablet Breakpoint*/
 @media only screen and (min-width: 480px) {
     /*start screen*/
@@ -324,6 +332,10 @@ footer a{
 
     /*extra entries*/
     .portfolio2 {
+        display: block;
+    }
+
+    .portfolio3{
         display: block;
     }
 
