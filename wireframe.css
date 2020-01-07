@@ -76,36 +76,41 @@ h1 {
     border-radius: 10px;
 }
 
-
-
-
-
-
-
-
-
-
 /*portfolio CSS*/
+.heading {
+    font-size: 20px;
+    margin: 10px;
+}
+
 .techList {
-    margin: 15px;
+    margin: 5px auto;
+    border: 1px solid black;
+    width: 75%;
 }
 
 .portfolioSS {
     border: 1px solid black;
-    margin: 15px;
+    margin: 5px 15px 10px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
 }
 
 .pImage {
-    height: 50%;
-    margin: 10px auto;
+    width: 90%;
+    padding: 60px 100px;
+    background: gray;
+    margin: 5px auto 15px;
+    border: 2px solid black;
 }
 
 .portfolioDescription {
-    font-size: 15px;
-    margin: 10px 5px 20px 5px;
-    border: 1px solid black;
-    padding: 15px;
+    font-size: 14px;
+    margin: 10px auto;
+    border: 1px dotted gray;
+    padding: 5px;
     text-align: left;
 }
 
@@ -127,6 +132,7 @@ h1 {
     padding: 10px;
     margin: 5px;
     font-size: 14px;
+    border-radius: 10px;
 }
 
 .pageNo {
@@ -141,23 +147,7 @@ h1 {
     margin: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*about me page CSS*/
-.heading {
-    font-size: 20px;
-    margin: 5px;
-}
+/*about me page */
 .aboutMe {
     margin: 25px 15px 0;
     padding: 10px;
@@ -188,7 +178,7 @@ h1 {
 footer{
     text-align: center;
     font-size: 10px;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 footer a{
@@ -196,9 +186,13 @@ footer a{
     text-decoration: underline;
 }
 
+.footerlink {
+    font-size: 10px;
+}
 
 /*Tablet Breakpoint*/
 @media only screen and (min-width: 480px) {
+    /*start screen*/
     .intro {
         margin: 80px;
     }
@@ -207,26 +201,43 @@ footer a{
         margin: 50px;
     }
 
+    /*portfolio*/
+    .techList {
+        width: 50%;
+    }
+
+    .heading{
+        font-size: 30px;
+    }
+
+    .portfolioDescription {
+        font-size: 16px;
+    }
+
+    .pImage {
+        height: 250px;
+    }
+
+    /*about me*/
     .bio {
         margin: 50px 20px 35px;
         border: none;
    }
 
+   .contact {
+       border: 1px solid black;
+       width: 60%;
+       margin: 10px auto;
+   }
 
-
-
-
-
-
-
-
-
-
-
+   .socialMediaLinks {
+        border: none;
+    }
 }
 
 /*Laptop Breakpoint*/
 @media only screen and (min-width: 768px) { 
+    /*start Screen*/
     h1 {
         text-align: center;
         margin: 75px 10px;
@@ -263,7 +274,7 @@ footer a{
         height: 75px;
     }
  
-    /*navbar Query*/
+    /*header*/
     header{
         background: lightgray;
         width: 100%;
@@ -283,53 +294,46 @@ footer a{
         padding: 10px;
     }
 
-
-
-
-
-
-
-
-
-
-
-    /*portfolio query*/
+    /*portfolio*/
     .portfolioSS {
-        margin: 20px auto;
-        position: relative;
-        top: 50px;
-        width: 75%;
+        margin: 70px 125px 20px;
+    }
+
+    .portfolioDescription {
+        font-size: 15px;
+        margin: 20px 10px;
     }
 
     .navigateButtons {
         display: none;
     }
 
-    .nButton{
-        width: 200px;
+    a {
+        font-size: 16px;
     }
 
-
-
-
-
-
-
-
-
-
-    
-
-
-
-    /*about me media query*/
-    .socialMediaLinks {
-        border: none;
+    .pImage {
+        height: 350px;
+        margin: 15px auto;
     }
 
+    /*about me*/
     .contact {
-        border: 1px solid black;
         width: 50%;
-        margin: 10px auto;
+    }
+
+    /*extra entries*/
+    .portfolio2 {
+        display: block;
+    }
+
+    .portfolioSSE {
+        margin: 40px 125px 20px;
+        border: 1px solid black;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: space-evenly;
     }
 }
